@@ -7,7 +7,7 @@ For more details about our methodology, please refer to our [paper](https://www.
 The performance of our proposed ensemble on BraTS 2018 dataset is shown in the following table:
 
 |Dataset|Dice(ET)|Dice(WT)|Dice(TC)|Hausdorff95(ET)|Hausdorff95(WT)|Hausdorff95(TC)|
-|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|
 |Training|0.735|0.902|0.813|5.433|5.398|6.932|
 |Validation|0.788|0.905|0.813|3.811|4.323|7.553|
 |Testing|0.749|0.875|0.793|4.219|6.479|6.522|
