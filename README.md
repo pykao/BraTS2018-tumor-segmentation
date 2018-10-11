@@ -8,8 +8,9 @@ The performance of our proposed ensemble on BraTS 2018 dataset is shown in the f
 
 |Dataset|Dice(ET)|Dice(WT)|Dice(TC)|Sensitivity(ET)|Sensitivity(WT)|Sensitivity(TC)|Specificity(ET)|Specificity(WT)|Specificity(TC)|Hausdorff95(ET)|Hausdorff95(WT)|Hausdorff95(TC)|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-|Training|0.73547|0.90208|0.81348|0.79451|0.89877|0.80269|0.9945|0.99145|0.99343|32.2726|5.4231|9.3586|
-|Validation|0.7875|0.90473|0.81347|0.81113|0.921|0.79803|0.99803|0.99427|0.99827|3.81183|4.3231|7.5531|
+|Training|0.735|0.902|0.813|0.795|0.899|0.803|0.995|.991|0.993|5.433|5.398|6.932|
+|Validation|0.788|0.905|0.813|0.811|0.921|0.798|0.998|0.994|0.998|3.811|4.323|7.553|
+|Testing|0.749|0.875|0.793|---|---|---|---|---|---|4.219|6.479|6.522|
 
 For the training set, we use 5-folds cross validation. ET:Enhancing tumor, WT: whole tumor, TC: tumor core.
 
@@ -24,9 +25,13 @@ The system was employed for our research presented in [1], where the we integrat
 
 Python3.6
 
-Pytorch0.4
+Pytorch0.4.0
+
+`pip install git+https://github.com/pytorch/pytorch.git@v0.4.0`
 
 Install custom pytorch kernels from https://github.com/thuyen/multicrop
+
+`pip install git+https://github.com/thuyen/multicrop.git`
 
 ## Required Python libraries
 
