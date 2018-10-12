@@ -50,7 +50,7 @@ The Harvard-Oxford subcortical atlases in subject space are stored at `BrainParc
 ## Create the HarvardOxford Subcortical Brain Parcellation to Subject Space for New BraTS Subject
 
 ```
-python createBrainParcellation -i /DIR_TO_MR_T1.nii.gz -o /DIR_TO_SAVE_THE_BRAIN_PARCELLATION -n SUBJECT_NAME
+python createBrainParcellation.py -i /DIR_TO_MR_T1.nii.gz -o /DIR_TO_SAVE_THE_BRAIN_PARCELLATION -n SUBJECT_NAME
 ```
 
 The output brain parcellation will be named as SUBJECT_NAME_HarvardOxford-sub.nii.gz
