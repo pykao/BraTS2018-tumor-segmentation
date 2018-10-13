@@ -9,4 +9,5 @@ build
 output
 submissions
 ckpts
+logs
 __pycache__
