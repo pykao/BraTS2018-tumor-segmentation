@@ -1,6 +1,6 @@
 import argparse
 import os
-#import subprocess
+import subprocess
 
 import SimpleITK as sitk
 import numpy as np
