@@ -149,7 +149,8 @@ test_set = {
         'has_label': False
         }
 
-doit(train_set)
+# docker
+#doit(train_set)
 doit(test_set)
 
 # benchmarking the data reading

@@ -1,10 +1,13 @@
 import argparse
 import os
-from nipype.interfaces.ants import N4BiasFieldCorrection
-import subprocess
-from natsort import natsorted
+#import subprocess
+
 import SimpleITK as sitk
 import numpy as np
+
+from nipype.interfaces.ants import N4BiasFieldCorrection
+from natsort import natsorted
+
 
 def ReadImage(file_path):
     ''' This code returns the numpy nd array for a MR image at path'''
