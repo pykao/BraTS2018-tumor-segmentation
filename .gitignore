@@ -10,4 +10,5 @@ output
 submissions
 ckpts
 logs
+backup
 __pycache__
