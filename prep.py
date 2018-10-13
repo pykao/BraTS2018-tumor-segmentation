@@ -150,7 +150,7 @@ test_set = {
         }
 
 # docker
-#doit(train_set)
+doit(train_set)
 doit(test_set)
 
 # benchmarking the data reading
