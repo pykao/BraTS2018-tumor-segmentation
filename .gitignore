@@ -12,3 +12,6 @@ ckpts
 logs
 backup
 __pycache__
+experiments/deepmedic*
+experiments/unet*
+experiments/munet*
