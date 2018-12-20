@@ -220,8 +220,8 @@ if __name__ == '__main__':
 
     #args.valid_list = 'valid_0.txt'
     #args.saving = False
-
-    args.data_dir = '/usr/data/pkao/brats2018/testing'
+    args.data_dir = '/media/hdd1/pkao/brats2018/validation'
+    #args.data_dir = '/usr/data/pkao/brats2018/testing'
     args.valid_list = 'test.txt'
     args.saving = True
 
