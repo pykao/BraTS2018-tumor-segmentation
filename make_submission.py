@@ -46,128 +46,128 @@ settings = {
             'weights': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
             'note': 'integrate all 26 models',
             },
-        'deepmedic_c25': { #1
+        'deepmedic_c25': { #6
             'models': ['deepmedic_ce_50_50_c25_all'],
             'weights': [1.0],
             'note': 'deepmedic with all training datasets and Harvard Oxford Subcortical Atlas',
             },
-        'deepmedic_c25_noaug': { #2
+        'deepmedic_c25_noaug': { #4
             'models': ['deepmedic_ce_50_50_c25_all_noaug'],
             'weights': [1.0],
             'note': 'deepmedic with all training datasets and Harvard Oxford Subcortical Atlas without data augmentation',
             },
-        'unet': { #3
+        'unet': { #21
             'models': ['unet_dice_all'],
             'weights': [1.0],
             'note': 'unet',
             },
-        'deepmedic_ce_all': { #4
+        'deepmedic_ce_all': { #1
             'models' :['deepmedic_ce_all'],
             'weights':[1.0],
             'note': 'deepmedic with all training datasets',
             },
-        'unet_ce_hard_per_im': { #5
+        'unet_ce_hard_per_im': { #25
             'models': ['unet_ce_hard_per_im'],
             'weights': [1.0],
             'note': 'unet cross entropy loss hard mining per image',
             },
-        'unet_ce_hard': { #6
+        'unet_ce_hard': { #23
             'models': ['unet_ce_hard'],
             'weights': [1.0],
             'note': 'unet cross entropy loss hard mining',
             }, 
 
-        'deepmedic_double': { #7
+        'deepmedic_double': { #9
             'models': ['deepmedic_ce_60_80_100_b50_mb50_all'],
             'weights': [1.0],
             'note': 'deepmedic with double convolutional kernels',  
             },
-        'deepmedic_triple': { #8
+        'deepmedic_triple': { #15
             'models': ['deepmedic_ce_90_120_150_b50_mb50_all'],
             'weights': [1.0],
             'note': 'deepmedic with triple convolutional kernels',  
             } ,
-        'deepmedic_double_c25': { #9
+        'deepmedic_double_c25': { #11
             'models': ['deepmedic_ce_c25_60_80_100_b50_mb50_all'],
             'weights': [1.0],
             'note': 'deepmedic with double convolutional kernels and 21 brain parcellatio channels',  
             } ,
-        'deepmedic_triple_c25_aug': { #10
+        'deepmedic_triple_c25_aug': { #17
             'models': ['deepmedic_ce_c25_90_120_150_b50_mb50_all'],
             'weights': [1.0],
             'note': 'deepMedic Triple with 21 BPs and data augmentation',  
             } ,
-        'deepmedic_15_c25_aug': { #11
+        'deepmedic_15_c25_aug': { #8
             'models': ['deepmedic_ce_c25_45_60_75_b50_mb50_all'],
             'weights': [1.0],
             'note': 'Deepmedic with 1.5 kernels 21 BPs and data augment',  
             } ,
-        'deepmedic_25_c25_aug': { #12
+        'deepmedic_25_c25_aug': { #14
             'models': ['deepmedic_ce_c25_75_100_125_b50_mb50_all'],
             'weights': [1.0],
             'note': 'Deepmedic with 2.5 kernels 21 BPs and data augment',  
             } ,
-        'deepmedic_ce_all_aug': { #13
+        'deepmedic_ce_all_aug': { #2
             'models': ['deepmedic_ce_all_aug'],
             'weights': [1.0],
             'note': 'Deepmedic with data augment',  
             } ,
-        'deepmedic_ce_50_50_all': { #14
+        'deepmedic_ce_50_50_all': { #3
             'models': ['deepmedic_ce_50_50_all'],
             'weights': [1.0],
             'note': 'Deepmedic mb50 b 50 without data augment',  
             } ,
-        'deepmedic_ce_50_50_all_aug': { #15
+        'deepmedic_ce_50_50_all_aug': { #5
             'models': ['deepmedic_ce_50_50_all_aug'],
             'weights': [1.0],
             'note': 'Deepmedic mb50 b 50 with data augment',  
             } ,
-        'deepmedic_ce_22x18x6_all_aug': { #16
+        'deepmedic_ce_22x18x6_all_aug': { #18
             'models': ['deepmedic_ce_22x18x6_all_aug'],
             'weights': [1.0],
             'note': 'deepmedic ce with 22x18x6 and data augment',  
             } ,
-        'deepmedic_ce_28x20x12_all_aug': { #17
+        'deepmedic_ce_28x20x12_all_aug': { #19
             'models': ['deepmedic_ce_28x20x12_all_aug'],
             'weights': [1.0],
             'note': 'deepmedic ce with 28x20x12 and data augment',  
             } ,
-        'deepmedic_ce_60_80_100_b50_mb50_all_aug': { #18
+        'deepmedic_ce_60_80_100_b50_mb50_all_aug': { #10
             'models': ['deepmedic_ce_60_80_100_b50_mb50_all_aug'],
             'weights': [1.0],
             'note': 'deepmedic double with data aug',  
             } ,
-        'deepmedic_ce_90_120_150_b50_mb50_all_aug': { #19
+        'deepmedic_ce_90_120_150_b50_mb50_all_aug': { #16
             'models': ['deepmedic_ce_90_120_150_b50_mb50_all_aug'],
             'weights': [1.0],
             'note': 'deepmedic triple with data aug',  
             } ,
-        'deepmedic_ce_75_100_125_b50_mb50_all_aug': { #20
+        'deepmedic_ce_75_100_125_b50_mb50_all_aug': { #13
             'models': ['deepmedic_ce_75_100_125_b50_mb50_all_aug'],
             'weights': [1.0],
             'note': 'deepmedic 2.5 with data aug',  
             } ,
-        'deepmedic_ce_75_100_125_b50_mb50_all': { #21
+        'deepmedic_ce_75_100_125_b50_mb50_all': { #12
             'models': ['deepmedic_ce_75_100_125_b50_mb50_all'],
             'weights': [1.0],
             'note': 'deepmedic 2.5 without data aug',  
             } ,
-        'deepmedic_ce_45_60_75_b50_mb50_all': { #22
+        'deepmedic_ce_45_60_75_b50_mb50_all': { #7
             'models': ['deepmedic_ce_45_60_75_b50_mb50_all'],
             'weights': [1.0],
             'note': 'deepmedic 1.5 without data aug',  
             } ,
-        'munet_dice_all': { #23
+        'munet_dice_all': { #20
             'models': ['munet_dice_all'],
             'weights': [1.0],
             'note': 'modified 3D Unet with Dice loss',  
             } ,
-        'unet_dice_c25_all': { #24
+        'unet_dice_c25_all': { #22
             'models': ['unet_dice_c25_all'],
             'weights': [1.0],
             'note': 'Unet with Dice Loss and BPs',  
             } ,
-        'unet_ce_hard_c25': { #25
+        'unet_ce_hard_c25': { #24
             'models': ['unet_ce_hard_c25'],
             'weights': [1.0],
             'note': 'Unet with ce and BPs',  
