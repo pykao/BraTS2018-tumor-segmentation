@@ -4,7 +4,7 @@ import os
 
 out_dir = '/media/hdd2/pkao/brats2018/output/training/'
 
-model = 'unet_ce_hard_per_im_c25_s2859'
+model = 'unet_ce_hard_per_im_c25_s4867'
 
 if not os.path.exists(os.path.join(out_dir, model)): os.mkdir(os.path.join(out_dir, model))
 
@@ -15,4 +15,4 @@ for fold in folds:
 
 	out = os.path.join(out_dir, model)
 	
-	call(['python', 'train_unet.py', '--gpu', '1', '--cfg', cfg_name, '--out', out])
+	call(['python', 'train_unet.py', '--gpu', '2', '--cfg', cfg_name, '--out', out])

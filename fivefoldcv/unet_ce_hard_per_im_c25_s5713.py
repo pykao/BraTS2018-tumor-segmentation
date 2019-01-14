@@ -15,4 +15,4 @@ for fold in folds:
 
 	out = os.path.join(out_dir, model)
 	
-	call(['python', 'train_unet.py', '--gpu', '1', '--cfg', cfg_name, '--out', out])
+	call(['python', 'train_unet.py', '--gpu', '3', '--cfg', cfg_name, '--out', out])
