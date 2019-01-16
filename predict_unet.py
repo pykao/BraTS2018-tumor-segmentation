@@ -187,7 +187,9 @@ if __name__ == '__main__':
     #args.saving = False
     #args.scoring = True
 
-    args.data_dir = '/usr/data/pkao/brats2018/testing'
+    #args.data_dir = '/usr/data/pkao/brats2018/testing'
+    # validation set
+    args.data_dir = '/media/hdd1/pkao/brats2018/validation'
     args.valid_list = 'test.txt'
     args.saving = True
     args.scoring = False # for real test data, set this to False
