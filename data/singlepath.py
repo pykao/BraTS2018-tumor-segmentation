@@ -265,69 +265,6 @@ class SingleData25(Dataset):
     #    return new_x
 
 
-class SingleData13(Dataset):
-    def __init__(self, list_file, root='', for_train=False,
-            transforms='', return_target=True, crop=True):
-        paths, names = [], []
-        with open(list_file) as f:
-            for line in f:
-                line = line.strip()
-                name = line.split('/')[-1]
-                names.append(name)
-                path = os.path.join(root, line , name + '_')
-                paths.append(path)
-
-        self.names = names
-        self.paths = paths
-        self.return_target = return_target
-
-        self.transforms   = eval(transforms or 'Identity()')
-
-    def __getitem__(self, index):
-        path = self.paths[index]
-
-        x, y = pkload(path + 'data_f32.pkl')
-        mask = np.load(path + 'VOI-1mm.npy')
-
-        # transforms work with nhwtc
-        x, y, mask = x[None, ...], y[None, ...], mask[None, ...]
-
-        done = False
-        if self.return_target:
-            while not done:
-                a, b, c = self.transforms([x, y, mask])
-                if b.sum() > 0:
-                    done = True
-                    x, y, mask = a, b, c
-        else:
-            x, mask = self.transforms([x, mask])
-            y = np.array([1])
-
-        x = np.ascontiguousarray(x.transpose(0, 4, 1, 2, 3))
-        y = np.ascontiguousarray(y)
-
-        x, y, mask = torch.from_numpy(x), torch.from_numpy(y), torch.from_numpy(mask)
-
-        return x, y, mask
-
-    def __len__(self):
-        return len(self.names)
-
-    def collate(self, batch):
-        return [torch.cat(v) for v in zip(*batch)]
-
-    #@staticmethod
-    #def add_mask(x, mask, dim=1):
-    #    mask = mask.unsqueeze(dim)
-    #    shape = list(x.shape); shape[dim] += 21
-    #    new_x = x.new(*shape).zero_()
-    #    new_x = new_x.scatter_(dim, mask, 1.0)
-    #    s = [slice(None)]*len(shape)
-    #    s[dim] = slice(21, None)
-    #    new_x[s] = x
-    #    return new_x
-
-
 class SingleData(Dataset):
     def __init__(self, list_file, root='', for_train=False,
             transforms='', return_target=True, crop=True):
