@@ -24,16 +24,8 @@ from utils import Parser
 from predict import validate, AverageMeter
 
 parser = argparse.ArgumentParser()
-#parser.add_argument('-cfg', '--cfg', default='deepmedic_nr_ce', type=str)
-#parser.add_argument('-cfg', '--cfg', default='deepmedic_nr', type=str)
-#parser.add_argument('-cfg', '--cfg', default='deepmedic_ce', type=str)
-#parser.add_argument('-cfg', '--cfg', default='deepmedic_nr_ce_all', type=str)
-#parser.add_argument('-cfg', '--cfg', default='deepmedic_ce_50_10', type=str)
-#parser.add_argument('-cfg', '--cfg', default='deepmedic_ce_50_50_all', type=str)
-#parser.add_argument('-cfg', '--cfg', default='deepmedic_ce_50_50_check', type=str)
-parser.add_argument('-cfg', '--cfg', default='deepmedic_ce_50_50_redo', type=str)
-#parser.add_argument('-cfg', '--cfg', default='deepmedic_ce_50_50_c25_redo', type=str)
-#parser.add_argument('-cfg', '--cfg', default='deepmedic_ce_50_50_all', type=str)
+
+parser.add_argument('-cfg', '--cfg', default='deepmedic_ce_45_60_75_b50_mb50_all', type=str)
 parser.add_argument('-gpu', '--gpu', default='0', type=str)
 parser.add_argument('-out', '--out', default='', type=str)
 
