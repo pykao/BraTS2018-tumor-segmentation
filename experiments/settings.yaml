@@ -3,9 +3,9 @@ root: /usr/data/pkao/brats2018/
 # The location to store the training data
 data_dir: /media/hdd1/pkao/brats2018/training
 # The location to store the validation data
-#test_data_dir: /media/hdd1/pkao/brats2018/validation
+test_data_dir: /media/hdd1/pkao/brats2018/validation
 # The location to save the testing data
-test_data_dir: /usr/data/pkao/brats2018/testing
+#test_data_dir: /usr/data/pkao/brats2018/testing
 # The location to save the trained models
 train_dir: /home/pkao/BraTS2018/segmentation/ckpts
 
