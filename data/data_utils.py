@@ -14,18 +14,18 @@ def add_mask(x, mask, dim=1):
     mask = mask.unsqueeze(dim)
     ########################################
     # HarvardOxford
-    shape = list(x.shape); shape[dim] += 21
+    #shape = list(x.shape); shape[dim] += 21
     # VOI
-    #shape = list(x.shape); shape[dim] += 9
+    shape = list(x.shape); shape[dim] += 9
     ########################################
     new_x = x.new(*shape).zero_()
     new_x = new_x.scatter_(dim, mask, 1.0)
     s = [slice(None)]*len(shape)
     ########################################
     # HarvardOxford
-    s[dim] = slice(21, None)
+    #s[dim] = slice(21, None)
     # VOI
-    #s[dim] = slice(9, None)
+    s[dim] = slice(9, None)
     ########################################
     new_x[s] = x
     return new_x
