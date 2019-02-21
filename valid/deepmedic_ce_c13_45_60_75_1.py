@@ -6,4 +6,4 @@ seeds = ['_s0104', '_s1716', '_s2114', '_s3204', '_s4251']
 
 for seed in seeds:
 	cfg_name = model+seed
-	call(['python', 'train.py', '--gpu', '2', '--cfg', cfg_name])
+	call(['python', 'train.py', '--gpu', '3', '--cfg', cfg_name])

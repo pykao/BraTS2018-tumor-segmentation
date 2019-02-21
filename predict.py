@@ -205,13 +205,7 @@ if __name__ == '__main__':
     global args
 
     parser = argparse.ArgumentParser()
-    #parser.add_argument('-cfg', '--cfg', default='deepmedic_ce_all', type=str)
-    #parser.add_argument('-cfg', '--cfg', default='deepmedic_nr_ce_all', type=str)
-    #parser.add_argument('-cfg', '--cfg', default='deepmedic_nr_ce', type=str)
-    #parser.add_argument('-cfg', '--cfg', default='deepmedic_ce', type=str)
-    #parser.add_argument('-cfg', '--cfg', default='deepmedic_ce_all', type=str)
 
-    #parser.add_argument('-cfg', '--cfg', default='deepmedic_ce_50_50_all', type=str)
     parser.add_argument('-cfg', '--cfg', default='deepmedic_ce_50_50_c25_all', type=str)
     parser.add_argument('-gpu', '--gpu', default='0', type=str)
 
