@@ -13,16 +13,19 @@ def nib_load(file_name):
 #suffix = 'HarvardOxford-sub'
 suffix = 'VOI-1mm'
 
+# training
 #mask_dir = '/usr/data/pkao/brats2018/BrainParcellation/HarvardOxford-sub/training'
 #mask_dir = '/usr/data/pkao/brats2018/BrainParcellation/VOI-1mm/train'
 #root = '/media/hdd1/pkao/brats2018/training'
 #flist = 'all.txt'
 
+# validation
 #mask_dir = '/usr/data/pkao/brats2018/BrainParcellation/HarvardOxford-sub/validation/'
 mask_dir = '/usr/data/pkao/brats2018/BrainParcellation/VOI-1mm/valid'
 root = '/media/hdd1/pkao/brats2018/validation'
 flist = 'test.txt'
 
+# testing
 #mask_dir = '/usr/data/pkao/brats2018/BrainParcellation/HarvardOxford-sub/testing/'
 #root = '/usr/data/pkao/brats2018/testing'
 #flist = 'test.txt'
