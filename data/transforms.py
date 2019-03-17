@@ -115,7 +115,8 @@ class CenterCrop(Base):
 
 
     def tf(self, img, k=0):
-        return img[self.buffer]
+        #return img[self.buffer]
+        return img[tuple(self.buffer)]
 
     def __str__(self):
         return 'CenterCrop({})'.format(self.size)
