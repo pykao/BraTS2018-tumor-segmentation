@@ -27,7 +27,7 @@ Python3.6
 
 Pytorch0.4.0
 
-`pip install git+https://github.com/pytorch/pytorch.git@v0.4.0`
+`pip install git+https://github.com/pykao/pytorch-v0.4.0
 
 Install custom pytorch kernels from https://github.com/thuyen/multicrop
 
